@@ -1,14 +1,17 @@
-import React from "react";
-import Footer from "./pages/Footer";
-import Header from "./pages/Header";
-import Hero from "./pages/Hero";
-
+import React, { useState } from "react";
+import useScanDetection from "use-scan-detection";
+import "./App.css";
 const App = () => {
+  const[barcodeScan, setBarcodeScan] = useState("No Barcode Scanned");
+  useScanDetection({
+    onComplete: setBarcodeScan,
+    minLength: 3,
+  });
   return (
     <>
-      <Header />
-      <Hero />
-      <Footer />
+      <div className="App" style={{ padding: "5rem 10rem" }}>
+        <p>Barcode: {barcodeScan}</p>
+      </div>
     </>
   );
 };
