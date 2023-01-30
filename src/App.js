@@ -1,5 +1,6 @@
 import React from "react";
 import Animation from "./pages/animation_add/Animation";
+import OutIn from "./pages/out-in-page/OutIn";
 /* import About from "./pages/About";
 import Beardcrum from "./pages/Beardcrum";
 import Carosal from "./pages/Carosal";
@@ -14,7 +15,8 @@ import Products from "./pages/Products"; */
 const App = () => {
   return (
     <>
-      <Animation />
+      {/*  <Animation /> */}
+      <OutIn />
     </>
   );
 };
