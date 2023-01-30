@@ -1,23 +1,41 @@
-import React from 'react'
+import React from "react";
+import { Table } from "reactstrap";
 
 const Hero = () => {
   return (
     <>
-
-<div class="banner" >
-    <div class="container">
-      <h1 class="font-weight-semibold">Search engine optimisation &<br />Marketing.</h1>
-      <h6 class="font-weight-normal text-muted pb-3">Simple is a simple template with a creative design that solves all your marketing and SEO queries.</h6>
-      <div>
-        <button class="btn btn-opacity-light mr-1">Get started</button>
-        <button class="btn btn-opacity-success ml-1">Learn more</button>
-      </div>
-      <img src="images/Group171.svg" alt="" class="img-fluid" />
-    </div>
-  </div>
-
+      <Table striped>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </Table>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
